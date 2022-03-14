@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Ropa+Sans&family=Texturina&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+body{
+    background-image: url("/public/Background.jpg");
+    background-size: cover;
+    font-family: texturina;
+
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    height: 6vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0,05);
+    backdrop-filter: blur(20px);
+    justify-content: space-around;
+    padding: 40px 0px;
+}
+
+header img{
+    width: 180px;
+    padding-top: 5px;
+    cursor: pointer;
+
+}
+
+header nav a{
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+}
+
+header button{
+    width: 8%;
+    background-color: white;
+    color: #167B63;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.inicial{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    width: 100%;
+    margin-top: 15vh;
+}
+
+.inicial div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 45%;
+}
+
+.inicial h1{
+    font-weight: bold;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.inicial h3{
+    font-weight: lighter;
+    text-align: center;
+    margin-top: 2.5rem;
+    width: 42%;
+}
+
+#button{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+
+}
+
+#button1{
+    width: 20%;
+    background-color: white;
+    color: #167B63;
+    height: 40px;
+    border-radius: 8px;
+    font-weight: bold;
+    border: none;
+}
+
+#button2{
+    width: 20%;
+    background-color: rgba(221, 221, 221, 0.05);
+    color: white;
+    height: 40px;
+    border-radius: 8px;
+    font-weight: bold;
+    border: 1px solid white;
+    margin-left: 1rem;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    padding: 3rem;
+}
+
+footer h3{
+    color: white;
+    text-align: center;
+    font-weight: lighter;
+    margin-top: 2.5rem;
+}
+
+@media (max-width:900px) {
+    header {
+        padding: 40px 50px;
+    }
+
+    header nav a{
+        font-size: 12px;
+        padding: 20px 6px;
+    }
+    
+}
+
+@media (max-width:720px){
+    header nav{
+        display: none;
+    }
+
+}
